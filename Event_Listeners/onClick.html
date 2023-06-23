@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button{
+            padding: 5px 15px;
+            font-size: 1.5rem; 
+          }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="button">Click Me</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById("button")
+        btn.addEventListener("click", () =>{
+            document.getElementById("button").textContent = "You Just Clicked Me"
+        })
+    </script>
+</body>
+</html>
